@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 545px;
+    width: 545px;
+    border: 5px solid rgb(65, 209, 65);
+    border-radius: 50%;
+}
+.total-container-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 405px;
+    width: 405px;
+    border: 5px solid #f175b1;
+    box-shadow: 0px 0px 50px 5px #f175b1;
+    border-radius: 50%;
+}
+/* Out Big Circle and Leaf */
+.deep-circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.deep-circle-container{
+    animation: rotation 25s linear infinite;
+}
+@keyframes rotation{
+    100%{transform: rotate(-300deg);}
+}
+.main-circle {
+    width: 100%;
+    height: 100%;
+    background:radial-gradient(yellow 10%,red 70%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 5px red;
+}
+.small-circle {
+    width: 50px;
+    height: 50px;
+    background:linear-gradient(45deg,white,rgb(65, 209, 65) 50%,white );
+    border-radius:50px 0px 50px 30px;
+    position: absolute;
+}
+/* Distributing the small circles using rotations and translations */
+.circle1  { transform: rotate(0deg)   translateY(-235px) rotate(-45deg); }
+.circle2  { transform: rotate(30deg)  translateY(-235px) rotate(-40deg); }
+.circle3  { transform: rotate(60deg)  translateY(-235px) rotate(-50deg); }
+.circle4  { transform: rotate(90deg)  translateY(-235px) rotate(-45deg); }
+.circle5  { transform: rotate(120deg) translateY(-235px) rotate(-50deg); }
+.circle6  { transform: rotate(150deg) translateY(-235px) rotate(-45deg); }
+.circle7  { transform: rotate(180deg) translateY(-235px) rotate(-45deg); }
+.circle8  { transform: rotate(210deg) translateY(-235px) rotate(-40deg); }
+.circle9  { transform: rotate(240deg) translateY(-235px) rotate(-40deg); }
+.circle10 { transform: rotate(270deg) translateY(-235px) rotate(-45deg); }
+.circle11 { transform: rotate(300deg) translateY(-235px) rotate(-40deg); }
+.circle12 { transform: rotate(330deg) translateY(-235px) rotate(-40deg); }
+/* Outer big Circle and Leaf */
+.outer-circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 270px;
+    border: 5px solid blue;
+    box-shadow: 0px 0px 50px 5px blue;
+    border-radius: 50%;
+    position: absolute;
+
+    animation: out-rotation 50s linear infinite;
+}
+@keyframes out-rotation{
+    100%{transform: rotate(300deg);}
+}
+
+.out-small-circle {
+    width: 50px;
+    height: 50px;
+    background:linear-gradient(45deg,white,#f175b1 40%,white );
+    border-radius:50px 0px 50px 30px;
+    position: absolute;
+}
+
+/* Distributing the small circles using rotations and translations */
+.out-circle1  { transform: rotate(0deg)   translateY(-167px) rotate(-45deg); }
+.out-circle2  { transform: rotate(30deg)  translateY(-167px) rotate(-40deg); }
+.out-circle3  { transform: rotate(60deg)  translateY(-167px) rotate(-50deg); }
+.out-circle4  { transform: rotate(90deg)  translateY(-167px) rotate(-45deg); }
+.out-circle5  { transform: rotate(120deg) translateY(-167px) rotate(-50deg); }
+.out-circle6  { transform: rotate(150deg) translateY(-167px) rotate(-45deg); }
+.out-circle7  { transform: rotate(180deg) translateY(-167px) rotate(-45deg); }
+.out-circle8  { transform: rotate(210deg) translateY(-167px) rotate(-40deg); }
+.out-circle9  { transform: rotate(240deg) translateY(-167px) rotate(-40deg); }
+.out-circle10 { transform: rotate(270deg) translateY(-167px) rotate(-45deg); }
+.out-circle11 { transform: rotate(300deg) translateY(-167px) rotate(-40deg); }
+.out-circle12 { transform: rotate(330deg) translateY(-167px) rotate(-40deg); }
+
+/* Inner small Circle and leaf */
+.inner-circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+
+    animation: in-rotation 50s linear infinite;
+}
+@keyframes in-rotation{
+    100%{transform: rotate(-300deg);}
+}
+.inner-center-circle {
+    width: 100%;
+    height: 100%;
+    background:radial-gradient(yellow 10%,red 70%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 5px red;
+}
+
+.in-small-circle {
+    width: 50px;
+    height: 50px;
+    background:linear-gradient(45deg,blue,skyblue 40%,blue );
+    border-radius:50px 0px 50px 30px;
+    position: absolute;
+}
+
+/* Distributing the small circles using rotations and translations */
+.in-circle1  { transform: rotate(0deg)   translateY(-100px) rotate(-45deg); }
+.in-circle2  { transform: rotate(30deg)  translateY(-100px) rotate(-40deg); }
+.in-circle3  { transform: rotate(60deg)  translateY(-100px) rotate(-50deg); }
+.in-circle4  { transform: rotate(90deg)  translateY(-100px) rotate(-45deg); }
+.in-circle5  { transform: rotate(120deg) translateY(-100px) rotate(-50deg); }
+.in-circle6  { transform: rotate(150deg) translateY(-100px) rotate(-45deg); }
+.in-circle7  { transform: rotate(180deg) translateY(-100px) rotate(-45deg); }
+.in-circle8  { transform: rotate(210deg) translateY(-100px) rotate(-40deg); }
+.in-circle9  { transform: rotate(240deg) translateY(-100px) rotate(-40deg); }
+.in-circle10 { transform: rotate(270deg) translateY(-100px) rotate(-45deg); }
+.in-circle11 { transform: rotate(300deg) translateY(-100px) rotate(-40deg); }
+.in-circle12 { transform: rotate(330deg) translateY(-100px) rotate(-40deg); }
